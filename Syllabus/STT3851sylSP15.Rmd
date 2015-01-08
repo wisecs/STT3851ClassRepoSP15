@@ -1,5 +1,5 @@
 ---
-title: "STT 3851 Syllabus"
+title: "STT 3851 Syllabus - Spring 2015"
 output: html_document
 ---
 
