@@ -1,5 +1,7 @@
 ---
 title: "STT 3851 Syllabus - Spring 2015"
+author: 
+date:
 output: html_document
 ---
 
