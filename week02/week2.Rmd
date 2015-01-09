@@ -5,8 +5,18 @@ date:
 output: html_document
 ---
 
-Using zotero will be covered the first part of the week.
+* Read pages 14-28 in PDS, and pages 1-42 in Introduction to Statistical Learning (ISLR)
 
-This week you will work on your personal Code Book.  You will show the instructor your folder in class on **Thursday, 20 January**.  The instructor will record your folder in the grade book as either a GO or NOGO.  
+* Using zotero will be covered the first part of the week.
 
-This week you will work on the citation assignment from page 18 of PDS.
+* This week you will work on your personal Code Book.  You will show the instructor your folder in class on **Thursday, 20 January**.  The instructor will record your folder in the grade book as either a GO or NOGO.  
+
+* This week you will work on the citation assignment from page 18 of PDS.
+
+* Watch [Opening Remarks and Examples video](https://www.youtube.com/watch?v=2wLfFB_6SKI) (18 min)
+
+* Watch [Supervised Learning and Unsupervsed Learning video](https://www.youtube.com/watch?v=LvaTokhYnDw) (12 min)
+
+* Watch [Statistical Learning and Regression video](https://www.youtube.com/watch?v=WjyuiK5taS8) (11:41 min)
+
+* Watch [Curse of Dimensionality and Parametric Models video](https://www.youtube.com/watch?v=UvxHOkYQl8g) (11:40 min)

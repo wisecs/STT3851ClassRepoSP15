@@ -5,8 +5,21 @@ date:
 output: html_document
 ---
 
+
 * Work on **Research Plan Assignment** page 26 PDS.
+
 * Peer reviews for **Citation Assignment** due NLT 5 PM February 6.
-* **Research Plan Assignment** see page 26 PDS due NLT 5 PM February 6.  Submit assignment
-via [http://www.crowdgrader.org](http://www.crowdgrader.org).  Further directions and grading rubric to appear in this folder. 
-* Read/review pages 18-26 PDS as needed.
+
+* **Research Plan Assignment** see page 26 PDS due NLT 5 PM February 6.  Submit assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  Further directions and grading rubric to appear in this folder. 
+
+* Read/review pages 18-26 PDS as needed. Read pages 59-82 ISLR.
+
+* Watch [Simple Linear Regression and Confidence Intervals video](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01 min)
+
+* Watch [Hypothesis Testing video]( https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24 min)
+ 
+* Watch [Multiple Linear Regression and Interpreting Regression Coefficients](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38 min) 
+
+* Watch [Model Selection and Qualitative Predictors video](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51 min)
+
+

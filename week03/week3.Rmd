@@ -5,12 +5,18 @@ date:
 output: html_document
 ---
 
-Integrating [zotero](www.zotero.com) with [RMarkdown](http://rmarkdown.rstudio.com) will be discussed during the first part of the week.  Example document will be stored in this folder.
+* Integrating [zotero](www.zotero.com) with [RMarkdown](http://rmarkdown.rstudio.com) will be discussed during the first part of the week.  Example document will be stored in this folder.
 
-Please read pages 13-25 in PDS and take notes as needed.
+* Please read pages 13-25 in PDS and take notes as needed.  Read pages 15-57 ISLR.
 
-Students will continue to work on the citation assignment.
+* Students will continue to work on the citation assignment.
 
-Submit the citation assignment to [www.crowdgrader.com](www.crowdgrader.com) no later than 5 pm January 30.
+* Submit the **Citation Assignment** to [www.crowdgrader.com](www.crowdgrader.com) no later than 5 pm January 30.
 
-Directions for submitting assignment and grading rubric....write them here.
+* Directions for submitting assignment and grading rubric....will appear in this directory.
+
+* Watch [Assessing Model Accuracy and Bias-Variance Trade-off video](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04 min)
+
+* Watch [Classification Problems and *K*-Nearest Neighbors video](https://www.youtube.com/watch?v=vVj2itVNku4) (15:37 min)
+
+* Complete Introduction to R Lab section 2.3 ISLR.
