@@ -11,7 +11,7 @@ output: html_document
 
 * Students will continue to work on the citation assignment.
 
-* Submit the **Citation Assignment** to [www.crowdgrader.com](www.crowdgrader.com) no later than 5 pm January 30.
+* Submit the **Citation Assignment** to [http://www.crowdgrader.org](http://www.crowdgrader.org) no later than 5 pm January 30.
 
 * Directions for submitting assignment and grading rubric....will appear in this directory.
 
