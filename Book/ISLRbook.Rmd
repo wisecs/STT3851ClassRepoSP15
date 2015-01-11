@@ -1,0 +1,8 @@
+---
+title: "ISLR"
+author: "Alan T. Arnholt"
+date: "January 11, 2015"
+output: html_document
+---
+
+A pdf of the ISLR book may be downloaded from the url [http://www-bcf.usc.edu/~gareth/ISL/](http://www-bcf.usc.edu/~gareth/ISL/).
