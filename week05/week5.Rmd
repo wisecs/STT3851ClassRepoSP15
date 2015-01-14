@@ -20,3 +20,5 @@ output: html_document
 * Watch [Interactions and Nonlinearity video](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16 min).
 
 * Complete Linear Regression Lab Section 3.6 ISLR.
+
+*
