@@ -1,0 +1,51 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Arnholt}{Arnholt}{2014}]{R-PASWR2}
+Arnholt, A.~T. (2014).
+\newblock {\em PASWR2: Probability and Statistics with R, Second Edition}.
+\newblock R package version 1.0.
+
+\bibitem[\protect\citeauthoryear{Beckschäfer, Fehrmann, Harrison, Xu, and
+  Kleinn}{Beckschäfer et~al.}{2014}]{beck2014}
+Beckschäfer, P., L.~Fehrmann, R.~Harrison, J.~Xu, and C.~Kleinn (2014,
+  February).
+\newblock Mapping leaf area index in subtropical upland ecosystems using
+  {RapidEye} imagery and the {randomForest} algorithm.
+\newblock {\em {iForest} - Biogeosciences and Forestry\/}~{\em 7\/}(1), 1--11.
+
+\bibitem[\protect\citeauthoryear{Boettiger}{Boettiger}{2014}]{R-knitcitations}
+Boettiger, C. (2014).
+\newblock {\em knitcitations: Citations for knitr markdown files}.
+\newblock R package version 1.0.5.
+
+\bibitem[\protect\citeauthoryear{Dean and {ebrary, Inc}}{Dean and {ebrary,
+  Inc}}{2014}]{dean2014}
+Dean, J. and {ebrary, Inc} (2014).
+\newblock {\em Big data, data mining, and machine learning value creation for
+  business leaders and practitioners}.
+\newblock Wiley \& {SAS} Business Series. Hoboken, {NJ}: Wiley.
+
+\bibitem[\protect\citeauthoryear{Murphy}{Murphy}{2012}]{murp2012}
+Murphy, K.~P. (2012).
+\newblock {\em Machine learning a probabilistic perspective}.
+\newblock Adaptive computation and machine learning series. Cambridge, Mass:
+  {MIT} Press.
+
+\bibitem[\protect\citeauthoryear{Richert}{Richert}{2013}]{rich2013}
+Richert, W. (2013).
+\newblock {\em Building machine learning systems with Python}.
+\newblock Birmingham, {UK}: Packt Publishing.
+
+\bibitem[\protect\citeauthoryear{Wickham, Danenberg, and Eugster}{Wickham
+  et~al.}{2014}]{R-roxygen2}
+Wickham, H., P.~Danenberg, and M.~Eugster (2014).
+\newblock {\em roxygen2: In-source Documentation for R}.
+\newblock R package version 4.1.0.
+
+\bibitem[\protect\citeauthoryear{Xie}{Xie}{2014}]{R-knitr}
+Xie, Y. (2014).
+\newblock {\em knitr: A General-Purpose Package for Dynamic Report Generation
+  in R}.
+\newblock R package version 1.8.
+
+\end{thebibliography}

@@ -40,7 +40,7 @@ git remote add upstream https://github.com/STT3851-SP15/STT3851ClassRepoSP15.git
 ```
 * Verify with
 ```
-git repo -v
+git remote -v
 ```
 * To obtain updates from the upstream repository type
 ```
