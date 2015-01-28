@@ -1,5 +1,5 @@
 ---
-title: "Research Proposal Template Using [RMarkdown](http://rmarkdown.rstudio.com) and [Zotero](www.zotero.org)"
+title: "Research Proposal Template Using [RMarkdown](http://rmarkdown.rstudio.com) and [Zotero](www.zotero.org) --- The Association between Nicotine Dependence and Major Depression at Different Levels of Smoking Exposure"
 author: "Alan Arnholt"
 date: "Spring 2015"
 output: html_document
