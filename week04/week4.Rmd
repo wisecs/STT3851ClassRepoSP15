@@ -10,7 +10,8 @@ output: html_document
 
 * Peer reviews for **Citation Assignment** due NLT 5 PM February 6.
 
-* **Research Plan Assignment** see page 26 PDS due NLT 5 PM February 6.  Submit assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  Further directions and grading rubric to appear in this folder. 
+* **Research Plan Assignment** see page 26 PDS due NLT 5 PM February 6.  Submit assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the assignment is
+[http://www.crowdgrader.org/crowdgrader/venues/view_venue/770](http://www.crowdgrader.org/crowdgrader/venues/view_venue/770).
 
 * Read/review pages 18-26 PDS as needed. Read pages 59-82 ISLR.
 
@@ -30,4 +31,4 @@ output: html_document
 
 3. Is there a **Methods** section which describes how the research was conducted?  The **Methods** section should include a discussion of the _sample_, _measures_, and _procedures_.  Is there an **Implications/Predicted Results** section that discusses real implications linked to possible results? 0/1
 
-A well written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the acutal variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
+A well written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
