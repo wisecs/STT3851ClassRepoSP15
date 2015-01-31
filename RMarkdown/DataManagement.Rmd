@@ -1,7 +1,7 @@
 ---
 title: "Data Management"
 author: "Alan T. Arnholt"
-date: "January 4, 2015"
+date: "Spring 2015"
 output: html_document
 ---
 
@@ -16,6 +16,25 @@ site <-paste0(firstpart, secondpart)
 con <- url(site)
 load(con)
 NESARC[1:6, 1:10] # show first six rows and first 10 columns
+rm(NESARC) # removing NESARC
+```
+
+Creating a connection, loading the connection, and knowing the actual name of the data set is a little too much!  So, I wrote an `R` package (`PDS`) that has the four data sets from *Passion Driven Statistics* that should make accessing the data a little easier.  Provided you have the `devtools` package installed, you can install `PDS` by entering
+
+```{r comment = NA, eval = FALSE}
+devtools::install_github('alanarnholt/PDS')
+```
+
+Once the `PDS` package is installed, you will need to load the package using the `library` function.   
+
+```{r comment = NA}
+library(PDS)
+```
+
+Now it is possible to access the data in the four data sets by typing the name of the data frame at the `R` prompt.  For example, to see the first five values in the variable `incomeperperson` from the `gapminder` data frame enter
+
+```{r comment = NA}
+gapminder[1:5, 'incomeperperson']
 ```
 
 ### Using the `dplyr` package
