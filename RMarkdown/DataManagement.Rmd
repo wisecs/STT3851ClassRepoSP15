@@ -19,7 +19,7 @@ NESARC[1:6, 1:10] # show first six rows and first 10 columns
 rm(NESARC) # removing NESARC
 ```
 
-Creating a connection, loading the connection, and knowing the actual name of the data set is a little too much!  So, I wrote an `R` package (`PDS`) that has the four data sets from *Passion Driven Statistics* that should make accessing the data a little easier.  You may download the most recent version of PDS using the [devtools](http://github.com/hdaley/devtools) function `install_github()` to install **PDS** in R.
+Creating a connection, loading the connection, and knowing the actual name of the data set is a little too much!  So, I wrote an `R` package (`PDS`) that has the four data sets from *Passion Driven Statistics* that should make accessing the data a little easier.  You may download the most recent version of `PDS` using the [devtools](http://github.com/hdaley/devtools) function `install_github()` to install `PDS` in `R`.
 
 However, you need to make sure you're set up to develop packages. This is platform specific:
 
@@ -27,8 +27,8 @@ However, you need to make sure you're set up to develop packages. This is platfo
 * On the Mac, make sure you have [Xcode](https://developer.apple.com/xcode/) installed.
 * On Linux, make sure you have the R-dev packages installed.
 
-You can check everything is installed correctly with the `has_devel()` function from the **devtools** package. Type the following at 
-the **R** prompt:
+You can check everything is installed correctly with the `has_devel()` function from the `devtools` package. Type the following at 
+the `R` prompt:
 
 ```{r comment = NA, eval = FALSE}
 install.packages("devtools", dependencies = TRUE)    
@@ -37,7 +37,7 @@ devtools::has_devel()
 
 If everything is installed correctly, the function will print some output and then return **TRUE**.
 
-To install the **PDS** package, type the following at the **R** prompt:
+To install the `PDS` package, type the following at the `R` prompt:
 
 
 ```{r comment = NA, eval = FALSE}
