@@ -149,6 +149,51 @@ img {
 [36,] &quot;CO2 emissions from other sectors, excluding residential buildings and commercial and public services (% of total fuel combustion)&quot;
 [37,] &quot;CO2 emissions from transport (million metric tons)&quot;                                                                               
 [38,] &quot;CO2 emissions from transport (% of total fuel combustion)&quot;                                                                        </code></pre>
+<pre class="r"><code>MOJ &lt;- WDI(country = &quot;all&quot;, indicator = c(&quot;EN.ATM.CO2E.PC&quot;, &quot;EG.USE.COMM.GD.PP.KD&quot;),
+    start = 2010, end = 2010, extra = FALSE, cache = NULL)
+head(MOJ)</code></pre>
+<pre><code>  iso2c                                 country year EN.ATM.CO2E.PC
+1    1A                              Arab World 2010       4.604405
+2    1W                                   World 2010       4.883465
+3    4E   East Asia &amp; Pacific (developing only) 2010       4.874166
+4    7E Europe &amp; Central Asia (developing only) 2010       5.312750
+5    8S                              South Asia 2010       1.401898
+6    AD                                 Andorra 2010       6.636721
+  EG.USE.COMM.GD.PP.KD
+1             118.2580
+2             139.2604
+3             181.4602
+4             163.1161
+5             124.4005
+6                   NA</code></pre>
+<pre class="r"><code>tail(MOJ)</code></pre>
+<pre><code>    iso2c                                        country year
+243    ZF           Sub-Saharan Africa (developing only) 2010
+244    ZG         Sub-Saharan Africa (all income levels) 2010
+245    ZJ  Latin America &amp; Caribbean (all income levels) 2010
+246    ZM                                         Zambia 2010
+247    ZQ Middle East &amp; North Africa (all income levels) 2010
+248    ZW                                       Zimbabwe 2010
+    EN.ATM.CO2E.PC EG.USE.COMM.GD.PP.KD
+243      0.8145163            187.78241
+244      0.8192745            187.78241
+245      2.9127515             98.61182
+246      0.1836693            176.57611
+247      5.8552561            129.50620
+248      0.7209507            463.67459</code></pre>
+<pre class="r"><code>dim(MOJ)</code></pre>
+<pre><code>[1] 248   5</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>
+Attaching package: 'dplyr'
+
+The following object is masked from 'package:stats':
+
+    filter
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code>MOJO &lt;- WDI(country = &quot;all&quot;, indicator = c(&quot;EN.ATM.CO2E.PC&quot;, &quot;EG.USE.COMM.GD.PP.KD&quot;),
     start = 1900, end = 2015, extra = FALSE, cache = NULL)
 head(MOJO)</code></pre>

@@ -8,6 +8,16 @@ output: html_document
 ```{r comment = NA}
 library(WDI)
 WDIsearch("CO2")
+MOJ <- WDI(country = "all", indicator = c("EN.ATM.CO2E.PC", "EG.USE.COMM.GD.PP.KD"),
+    start = 2010, end = 2010, extra = FALSE, cache = NULL)
+head(MOJ)
+tail(MOJ)
+dim(MOJ)
+library(dplyr)
+library(PDS)
+MOJcom <- inner_join(x = gapminder, y = MOJ)
+dim(MOJcom)
+head(MOJcom)
 MOJO <- WDI(country = "all", indicator = c("EN.ATM.CO2E.PC", "EG.USE.COMM.GD.PP.KD"),
     start = 1900, end = 2015, extra = FALSE, cache = NULL)
 head(MOJO)
