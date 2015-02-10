@@ -146,19 +146,90 @@ epiN</code></pre>
 3  Dr. A Easy Traditional Sitting  1 22.95909
 4  Dr. A Easy Traditional Sitting  0 23.71184</code></pre>
 <pre class="r"><code>DN &lt;- dim(epiN)
-n &lt;- DN[1]
-n</code></pre>
-<pre><code>[1] 4</code></pre>
-<p>There are 4 patients who have a <code>BMI</code> between 20 and 25 inclusive and were treated by <code>Dr. A</code>.</p>
+DN</code></pre>
+<pre><code>[1] 4 5</code></pre>
+<p>There are 4 patients that have a <code>BMI</code> between 20 and 25 inclusive and were treated by <code>Dr. A</code>.</p>
 </div>
 <div id="problems" class="section level2">
 <h2>Problems</h2>
 <p>Use the data frame <code>quine</code> from the <code>MASS</code> package to answer all questions.</p>
 <ol style="list-style-type: decimal">
-<li><p>How many aboriginal average learning females in grade “F0” have missed more than 5 days of school? (3)</p></li>
-<li><p>How many non-aboriginal males in grade “F0” have never missed any school? (2)</p></li>
-<li><p>What is the average number of missed school days for non-aboriginal average learning males? (13.36364)</p></li>
+<li>How many aboriginal average learning females in grade “F0” have missed more than 5 days of school? (3)</li>
 </ol>
+<pre class="r"><code>library(dplyr)
+library(MASS)
+qu &lt;- quine %&gt;%
+  filter(Eth == &quot;A&quot; &amp; Sex == &quot;F&quot; &amp; Age == &quot;F0&quot; &amp; Lrn == &quot;AL&quot; &amp; Days &gt; 5)
+qu</code></pre>
+<pre><code>  Eth Sex Age Lrn Days
+1   A   F  F0  AL   11
+2   A   F  F0  AL   24
+3   A   F  F0  AL   45</code></pre>
+<pre class="r"><code>n &lt;- dim(qu)[1]
+n</code></pre>
+<pre><code>[1] 3</code></pre>
+<p>There are 3 aboriginal average learning females in grade “F0” have missed more than 5 days of school.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>How many non-aboriginal males in grade “F0” have never missed any school? (2)</li>
+</ol>
+<pre class="r"><code>qu &lt;- quine %&gt;%
+  filter(Eth == &quot;N&quot; &amp; Sex == &quot;M&quot; &amp; Age == &quot;F0&quot; &amp; Days == 0)
+qu</code></pre>
+<pre><code>  Eth Sex Age Lrn Days
+1   N   M  F0  AL    0
+2   N   M  F0  AL    0</code></pre>
+<pre class="r"><code>n &lt;- dim(qu)[1]
+n</code></pre>
+<pre><code>[1] 2</code></pre>
+<p>There are 2 non-aboriginal males in grade “F0” that have never missed any school.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>What is the average number of missed school days for non-aboriginal average learning males? (13.36364)</li>
+</ol>
+<pre class="r"><code>qu &lt;- quine %&gt;%
+  filter(Eth == &quot;N&quot; &amp; Lrn == &quot;AL&quot; &amp; Sex == &quot;M&quot;)
+qu</code></pre>
+<pre><code>   Eth Sex Age Lrn Days
+1    N   M  F0  AL    0
+2    N   M  F0  AL    0
+3    N   M  F0  AL    2
+4    N   M  F0  AL    7
+5    N   M  F0  AL   11
+6    N   M  F0  AL   12
+7    N   M  F1  AL    3
+8    N   M  F1  AL    4
+9    N   M  F2  AL    8
+10   N   M  F2  AL    0
+11   N   M  F2  AL    1
+12   N   M  F2  AL    5
+13   N   M  F2  AL    7
+14   N   M  F2  AL   16
+15   N   M  F2  AL   27
+16   N   M  F3  AL    0
+17   N   M  F3  AL   30
+18   N   M  F3  AL   10
+19   N   M  F3  AL   14
+20   N   M  F3  AL   27
+21   N   M  F3  AL   41
+22   N   M  F3  AL   69</code></pre>
+<pre class="r"><code>MeanDays &lt;- mean(qu$Days)
+MeanDays</code></pre>
+<pre><code>[1] 13.36364</code></pre>
+<pre class="r"><code>TT &lt;- tapply(quine$Days, list(quine$Eth, quine$Lrn, quine$Sex), mean)
+TT</code></pre>
+<pre><code>, , F
+
+        AL       SL
+A 14.47368 27.36842
+N 13.14286  7.00000
+
+, , M
+
+        AL   SL
+A 22.28571 20.2
+N 13.36364 17.0</code></pre>
+<pre class="r"><code>TT[, , &quot;M&quot;][2, 1]</code></pre>
+<pre><code>[1] 13.36364</code></pre>
+<p>The average number of missed school days for non-aboriginal average learning males is 13.3636364.</p>
 <p>Use the following code to create the data frame <code>DF</code>.</p>
 <pre class="r"><code>set.seed(37)
 fac1 &lt;- factor(sample(letters[1:4], 100, replace = TRUE))
@@ -177,6 +248,22 @@ head(DF)</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>What percent of level <code>B</code> (<code>fac2</code>) are <code>Female</code>? (53.65854%)</li>
 </ol>
+<pre class="r"><code>T1 &lt;- xtabs(~ fac2 + sex, data = DF)
+T1</code></pre>
+<pre><code>    sex
+fac2 Female Male
+   A     32   27
+   B     22   19</code></pre>
+<pre class="r"><code>prop.table(T1, 1)</code></pre>
+<pre><code>    sex
+fac2    Female      Male
+   A 0.5423729 0.4576271
+   B 0.5365854 0.4634146</code></pre>
+<pre class="r"><code># or in one line
+ans &lt;- round(prop.table(xtabs(~ fac2 + sex, data = DF), 1)[2, 1]*100, 2)
+ans</code></pre>
+<pre><code>[1] 53.66</code></pre>
+<p>53.66% of level <code>B</code> (<code>fac2</code>) are <code>Female</code>.</p>
 </div>
 
 
