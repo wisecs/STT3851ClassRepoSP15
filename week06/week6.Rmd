@@ -22,3 +22,9 @@ I will use the same grading rubric (below) you used in the peer evaluation phase
 3. Is there a **Methods** section which describes how the research was conducted?  The **Methods** section should include a discussion of the _sample_, _measures_, and _procedures_.  Is there an **Implications/Predicted Results** section that discusses real implications linked to possible results? 0/1
 
 A well written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
+
+### Watch ISLR videos: 
+
+- [Introduction to classification (10:25)](https://www.youtube.com/watch?v=sqq21-VIa1c)
+- [Logistic Regression and Maximum Likelihood (9:07)](https://www.youtube.com/watch?v=31Q5FGRnxt4)
+- [Multivariate Logistic Regression and Confounding (9:53) ](https://www.youtube.com/watch?v=MpX8rVv_u4E)
