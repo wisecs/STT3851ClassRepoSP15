@@ -115,9 +115,9 @@ Pxbar</code></pre>
   1 1.5   2 2.5   3 
 1/9 2/9 1/3 2/9 1/9 </code></pre>
 <pre class="r"><code>MU &lt;- sum(stuff)/N
-VAR &lt;- fractions(sum((stuff - MU)^2)*1/N)
-c(MU, VAR)</code></pre>
-<pre><code>[1] 2.0000000 0.6666667</code></pre>
+VAR &lt;- sum((stuff - MU)^2)*1/N
+fractions(c(MU, VAR))</code></pre>
+<pre><code>[1]   2 2/3</code></pre>
 <pre class="r"><code>MUxbar &lt;- MU
 VARxbar &lt;- VAR/n
 fractions(c(MUxbar, VARxbar))</code></pre>

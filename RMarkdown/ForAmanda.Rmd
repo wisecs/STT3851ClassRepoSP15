@@ -27,8 +27,8 @@ fractions(xtabs(~xbar, data = NS)/(N^n))
 Pxbar <- fractions(xtabs(~xbar, data = NS)/(N^n))
 Pxbar
 MU <- sum(stuff)/N
-VAR <- fractions(sum((stuff - MU)^2)*1/N)
-c(MU, VAR)
+VAR <- sum((stuff - MU)^2)*1/N
+fractions(c(MU, VAR))
 MUxbar <- MU
 VARxbar <- VAR/n
 fractions(c(MUxbar, VARxbar))
