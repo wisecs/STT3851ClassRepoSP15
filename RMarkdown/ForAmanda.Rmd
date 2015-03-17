@@ -7,7 +7,7 @@ output: html_document
 
 $$E(X)= \mu_X = \sum x \cdot p(x) $$
 $$V(X)=\sigma^2_X$$
-$$V(\bar{X}) = \sigma^2_{\bar{X}} = E[(\bar{X} - \mu_{\bar{X}})^2] = \sum(\bar{x} - \mu_{\bar{x}})^2\cdot p(\bar{x}) = \frac{\sigma_X}{n}$$
+$$V(\bar{X}) = \sigma^2_{\bar{X}} = E[(\bar{X} - \mu_{\bar{X}})^2] = \sum(\bar{x} - \mu_{\bar{X}})^2\cdot p(\bar{x}) = \frac{\sigma_X}{n}$$
 
 From class, $\{1, 2, 3\}$, $n = 2$.
 
