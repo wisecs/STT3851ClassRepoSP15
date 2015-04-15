@@ -20,6 +20,8 @@ weight <- data.frame(
   WeightLoss = c(17.4, 21.5, 23.6, 21.9, 20.5, 5.9, 4.8, 6.4, 6.8, 6.9, 
                  10.9, 4.2, 9.4, 10, 9.2, 10.1, 9.8, 12.7, 14.4, 11.6, 8.3))
 head(weight)
+tapply(weight$WeightLoss, list(weight$Diet), mean)
+tapply(weight$WeightLoss, list(weight$Exercise), mean)       
 tapply(weight$WeightLoss, list(weight$Exercise, weight$Diet), mean)
 weight.aov <- aov(WeightLoss ~ Exercise + Diet + Exercise:Diet, data = weight)
 summary(weight.aov)
@@ -73,3 +75,41 @@ ggplot(data = DF, aes(x = Exercise, y = MeanWeightLoss, fill = Diet)) +
   labs(title="Exercise Type Moderates the Relationship\nBetween Diet Type and Weight Loss", x = "", y = "Weight Loss (lbs.)")
 ```
 
+## Moderation with Pearson Correlation
+
+```{r}
+library(ISLR)
+library(ggplot2)
+head(Default)
+ggplot(data = Default, aes(x = balance, y = income, color = default)) + 
+  geom_point(alpha = 0.5) + 
+  theme_bw()
+with(data = Default, cor(balance, income))
+by(Default, Default$default, function(x)cor.test(~balance + income, data = x))
+# Same as
+cor.test(~balance + income, data = Default, subset = default =="Yes")
+cor.test(~balance + income, data = Default, subset = default =="No")
+```
+
+## Moderation with Chi-Square
+
+```{r}
+library(PASWR2)
+T1 <- xtabs(~survived + pclass, data = TITANIC3)
+T1
+chisq.test(T1)
+by(TITANIC3, TITANIC3$sex, function(x)list(chisq.test(x$survived, x$pclass),
+                                               chisq.test(x$survived, x$pclass)$residuals))
+# Or
+T1a <- xtabs(~survived + pclass, data = subset(TITANIC3, subset = sex == "female"))
+T1a
+chisq.test(T1a)
+chisq.test(T1a)$res
+T1b <- xtabs(~survived + pclass, data = subset(TITANIC3, subset = sex == "male"))
+T1b
+chisq.test(T1b)
+chisq.test(T1b)$res
+library(vcd)
+mosaic(~pclass + survived, data = TITANIC3, shade = TRUE)
+mosaic(~pclass + survived + sex, data = TITANIC3, shade = TRUE)
+```
